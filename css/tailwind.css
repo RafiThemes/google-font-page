@@ -1,0 +1,22 @@
+.hello{
+    color:red;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .listo {
+        @apply py-2 px-4 rounded-md group hover:bg-gray-200 dark:hover:bg-gray-700 my-2 flex flex-col  items-center justify-center transition dark:text-gray-300 ;
+    }
+
+
+    .linko {
+        @apply h-11 w-11 rounded-full bg-gray-300 dark:bg-gray-600 group-hover:bg-gray-100 dark:group-hover:bg-gray-500 m-3 flex justify-center items-center ;
+    }
+
+    .button-1 {
+        @apply text-xs px-3 py-1 rounded-3xl border-gray-300 border mt-3 dark:text-gray-200  dark:border-opacity-30;
+    }
+}
